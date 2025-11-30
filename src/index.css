@@ -2,38 +2,47 @@
 
 
 @layer base {
-  @font-face {
-    font-family: 'iransans-500';
-    src: url('fonts/IRANSansX-Medium500.woff');
-  }
 
-  @font-face {
-    font-family: 'iransans-400';
-    src: url('fonts/IRANSansX-Regular400.woff');
-  }
+    @font-face {
+        font-family: 'iransans-700';
+        src: url('fonts/IRANSansX-Bold700.woff');
+    }
+    @font-face {
+        font-family: 'iransans-500';
+        src: url('fonts/IRANSansX-Medium500.woff');
+    }
+
+    @font-face {
+        font-family: 'iransans-400';
+        src: url('fonts/IRANSansX-Regular400.woff');
+    }
 
 
 
-  body {
-    direction: rtl;
-    max-width: 2000px;
-    margin: auto;
-    overflow-x: hidden;
-  }
+    body {
+        direction: rtl;
+        max-width: 2000px;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
 
 
 }
 
 @theme{
-  /*==============COLORS===============*/
-  --color-sec: #BB7342;
+    /*==============COLORS===============*/
+    --color-prim: #DE972F;
+    --color-prim-hover: #e0a042;
+    --color-muted-48: #484848;
 
-  /*==============FONTS===============*/
-  --font-500: iranSans-500;
-  --font-400: iranSans-400;
+    /*==============FONTS===============*/
+    --font-700: iranSans-700;
+    --font-500: iranSans-500;
+    --font-400: iranSans-400;
 
-  /*==============SHADOWS===============*/
-  --shadow-1: 0 0 4px 0 #00000040;
+    /*==============SHADOWS===============*/
+    --shadow-1: 0 0 4px 0 #00000040;
 }
 
 

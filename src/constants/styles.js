@@ -1,0 +1,1 @@
+export const SECTION_X_PADDING = 'px-[100px]'

@@ -1,7 +1,8 @@
+import Hero from "@pages/MainPage/Hero.jsx";
 
 function MainPageLayout() {
     return (
-        <div>MainPageLayout</div>
+        <Hero/>
     );
 }
 

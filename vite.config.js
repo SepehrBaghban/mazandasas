@@ -4,10 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import path from 'path';
 import {fileURLToPath} from 'url';
+import vitePluginSvgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss(),],
+  plugins: [react(),tailwindcss(),vitePluginSvgr()],
   resolve:{
     alias: {
       '@media': path.resolve(__dirname, 'src/media'),
