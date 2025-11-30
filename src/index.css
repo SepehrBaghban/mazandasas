@@ -26,7 +26,22 @@
         overflow-x: hidden;
     }
 
+    /*#hero {*/
+    /*    background: url("@media/images/hero.webp") center center no-repeat;*/
+    /*    background-size: contain;*/
+    /*}*/
 
+    .glass-blur-gradient-bg {
+        background: linear-gradient(#FFFFFF66, #FFFFFF00);
+        box-shadow: -5px -5px 250px 0 #FFFFFF05 inset;
+        backdrop-filter: blur(5px);
+    }
+
+    .glass-blur-bg {
+        background: #FFFFFF33;
+        box-shadow: -5px -5px 250px 0 #FFFFFF05 inset;
+        backdrop-filter: blur(5px);
+    }
 
 }
 
@@ -35,6 +50,7 @@
     --color-prim: #DE972F;
     --color-prim-hover: #e0a042;
     --color-muted-48: #484848;
+    --color-muted-29: #292929;
 
     /*==============FONTS===============*/
     --font-700: iranSans-700;

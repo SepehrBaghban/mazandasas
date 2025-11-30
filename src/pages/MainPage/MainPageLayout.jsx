@@ -1,4 +1,4 @@
-import Hero from "@pages/MainPage/Hero.jsx";
+import Hero from "@pages/MainPage/Hero/Hero.jsx";
 
 function MainPageLayout() {
     return (

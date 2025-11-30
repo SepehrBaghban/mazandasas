@@ -1,4 +1,5 @@
 import './TruckLoader.css'
+import {TRUCK_LOADER_Z_INDEX} from "@constants/styles.js";
 
 function TruckLoader({
                          fullScreen = false
@@ -6,7 +7,7 @@ function TruckLoader({
     return (
         <div
             id={"TruckLoader"}
-            className={`${fullScreen ? "fixed h-dvh w-dvw bg-[#DFDFDF] " : "m-4"} 
+            className={`${fullScreen ? `fixed  inset-0 h-dvh w-dvw bg-[#DFDFDF] ${TRUCK_LOADER_Z_INDEX} ` : "m-4"} 
              w-full h-full flex items-center justify-center `}
         >
             <div className="truck-loader">

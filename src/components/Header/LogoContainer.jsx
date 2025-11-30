@@ -3,6 +3,7 @@
 import {motion} from "motion/react";
 import logo from "@media/icons/favicon.ico";
 import {useWindowSize} from "react-use";
+import {BRAND_TITLE_EN} from "@constants/info.js";
 
 function LogoContainer() {
 
@@ -12,7 +13,7 @@ function LogoContainer() {
     return (
         <motion.div
             id="logo-container"
-            className="h-[40px] flex items-center gap-2"
+            className="max-[700px]:h-[30px] h-[40px] flex items-center gap-2"
             // Initial animation values
             initial={{
                 x: -width,     // start far-left outside header
@@ -33,11 +34,16 @@ function LogoContainer() {
                 mass: 1,         // heavier feel
                 delay: 0.8
             }}
+            // Shake on click (event-based)
+            whileTap={{
+                rotate: [-8, 8, -5, 5, 0],
+                transition: {duration: 0.4}
+            }}
         >
             <motion.img
                 src={logo}
                 alt="مازند اساس"
-                className="w-full h-full object-contain"
+                className=" max-[650px]:w-[50px] w-full h-full object-contain"
                 // Slight shake when truck stops
                 animate={{rotate: [0, -3, 3, 0, -3, 3, 0, -3, 3, 0, -3, 3, 0, -3, 3, 0 - 3, 3, 0]}}
                 transition={{
@@ -47,8 +53,8 @@ function LogoContainer() {
                 }}
             />
 
-            <motion.h1
-                className="text-[18px] font-400 text-muted-48"
+            <motion.h2
+                className="select-none max-[650px]:text-[16px] text-[18px] font-400 text-muted-48"
                 // Text fades in after the truck settles
                 initial={{opacity: 0, x: -25}}
                 animate={{opacity: 1, x: 0}}
@@ -57,8 +63,8 @@ function LogoContainer() {
                     duration: 0.5
                 }}
             >
-                Mazandasas
-            </motion.h1>
+                {BRAND_TITLE_EN}
+            </motion.h2>
         </motion.div>
     );
 }
