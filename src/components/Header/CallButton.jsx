@@ -22,7 +22,7 @@ function CallButton() {
                 marginRight: "auto"
             }}
         >
-            <a className={`w-full h-full flex items-center gap-2`} href={`tel:${CEO_PHONE}`}>
+            <a className={`w-full h-full flex items-center justify-center gap-2`} href={`tel:${CEO_PHONE}`}>
                 {width >= 800 && convertEnToPe(CEO_PHONE)}
                 <Phone className={`${ICON_STYLES}`}/>
             </a>

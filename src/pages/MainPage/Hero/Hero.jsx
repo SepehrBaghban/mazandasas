@@ -6,7 +6,7 @@ import {SECTION_X_PADDING} from "@constants/styles.js";
 
 function Hero() {
     return (
-        <section id="hero" className={`relative max-[500px]:overflow-visible overflow-x-hidden`}>
+        <section id="hero" className={`relative max-[500px]:h-[500px] max-[500px]:overflow-visible overflow-x-hidden`}>
             <img
                 id={"hero-image"}
                 className={`w-full h-full object-cover absolute inset-0 z-[-1]`}

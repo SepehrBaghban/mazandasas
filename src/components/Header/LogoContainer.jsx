@@ -36,9 +36,15 @@ function LogoContainer() {
             }}
             // Shake on click (event-based)
             whileTap={{
-                rotate: [-8, 8, -5, 5, 0],
-                transition: {duration: 0.4}
+                x: [-2, 2, -3, 3, -2, 2, 0],       // small left-right vibration
+                rotate: [-2, 2, -3, 3, -1, 1, 0], // slight tilt like truck engine
+                scale: [1, 1.02, 1, 1.02, 1],     // tiny engine rumble
+                transition: {
+                    duration: 0.5,
+                    ease: "easeInOut"
+                }
             }}
+
         >
             <motion.img
                 src={logo}

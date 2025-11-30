@@ -2,3 +2,4 @@ export const SECTION_X_PADDING = ' max-[600px]:px-[32px] max-[650px]:px-[48px] m
 export const HEADER_Z_INDEX = 'z-[50]'
 export const TRUCK_LOADER_Z_INDEX = 'z-[60]'
 export const ICON_STYLES = 'shrink-0 max-[600px]:w-[20px]  w-[24px] max-[600px]:h-[20px] h-[24px]'
+export const SECTION_HEADER_STYLES = 'font-500 max-[400px]:text-[16px] max-[500px]:text-[18px] max-[800px]:text-[20px] max-[1000px]:text-[22px] text-[24px]'
