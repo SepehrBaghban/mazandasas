@@ -1,6 +1,9 @@
 import {createBrowserRouter} from "react-router";
 import App from "./App.jsx";
-import MainPageLayout from "@pages/MainPage/MainPageLayout.jsx";
+import {lazy, Suspense} from "react";
+import TruckLoader from "@components/Loaders/TruckLoader.jsx";
+
+const MainPageLayout = lazy(() => import("@pages/MainPage/MainPageLayout.jsx"));
 
 
 const Routes = [
@@ -11,7 +14,10 @@ const Routes = [
             {
                 path: "/",
                 errorElement: <p>error...</p>,
-                element: <MainPageLayout/>,
+                element:
+                    <Suspense fallback={<TruckLoader fullScreen/>}>
+                        <MainPageLayout/>
+                    </Suspense>
             }
         ]
 
