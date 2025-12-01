@@ -10,8 +10,8 @@ const links = [
     },
     {
         id: '2',
-        title: "مقالات",
-        hash: "#articles",
+        title: "درباره ما",
+        hash: "#about",
     },
     {
         id: '3',
@@ -27,14 +27,14 @@ function LinksContainer() {
                 links.map((link, index) => {
                     return (
                         <ButtonBase sx={{borderRadius: "8px"}}>
-                            <Link
+                            <a
                                 className={`shrink-0 max-[600px]:p-2 max-[1000px]:px-4 px-6 py-2 max-[650px]:text-[14px] text-[16px] text-muted-48 font-400`}
                                 key={index}
-                                to={link.hash}
+                                href={link.hash}
                             >
                                 {link?.title}
-                            </Link>
-                        </ButtonBase>
+                            </a>
+                         </ButtonBase>
                     )
                 })
             }

@@ -17,7 +17,10 @@
         src: url('fonts/IRANSansX-Regular400.woff');
     }
 
+html{
 
+        scroll-behavior: smooth;
+}
 
     body {
         direction: rtl;
@@ -25,6 +28,7 @@
         margin: auto;
         overflow-x: hidden;
     }
+
 
     /*#hero {*/
     /*    background: url("@media/images/hero.webp") center center no-repeat;*/
@@ -36,6 +40,13 @@
         box-shadow: -5px -5px 250px 0 #FFFFFF05 inset;
         backdrop-filter: blur(5px);
     }
+
+    @media screen and (max-width: 500px) {
+        .glass-blur-gradient-bg {
+            backdrop-filter: blur(20px);
+        }
+    }
+
 
     .glass-blur-bg {
         background: #FFFFFF33;
@@ -51,6 +62,7 @@
     --color-prim-hover: #e0a042;
     --color-muted-48: #484848;
     --color-muted-29: #292929;
+    --color-muted-40: #404040;
 
     /*==============FONTS===============*/
     --font-700: iranSans-700;

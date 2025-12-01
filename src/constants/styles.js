@@ -1,4 +1,5 @@
 export const SECTION_X_PADDING = ' max-[600px]:px-[32px] max-[650px]:px-[48px] max-[850px]:px-[64px] max-[1000px]:px-[80px] px-[100px]'
+export const SECTION_Y_PADDING = ' max-[900px]:py-6 py-10'
 export const HEADER_Z_INDEX = 'z-[50]'
 export const TRUCK_LOADER_Z_INDEX = 'z-[60]'
 export const ICON_STYLES = 'shrink-0 max-[600px]:w-[20px]  w-[24px] max-[600px]:h-[20px] h-[24px]'
