@@ -77,7 +77,7 @@ function ServicesSection() {
         <section
             ref={ref}
             id="services"
-            className={`${SECTION_X_PADDING} ${SECTION_Y_PADDING}  bg-[#CEB08A]`}
+            className={`${SECTION_X_PADDING} ${SECTION_Y_PADDING}  bg-sec`}
         >
             <h2 className={`text-white text-center ${SECTION_HEADER_STYLES}`}>خدمات ما</h2>
             <div className={`grid max-[1000px]:grid-cols-2 grid-cols-4 max-[500px]:gap-4 gap-6 overflow-hidden max-[500px]:mt-4 max-[800px]:mt-6 mt-10`}>

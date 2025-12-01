@@ -28,6 +28,25 @@ html{
         margin: auto;
         overflow-x: hidden;
     }
+    .phone-shake {
+        animation: phoneShake 4s ease-in-out infinite;
+    }
+
+    @keyframes phoneShake {
+        0%   { transform: rotate(0); }
+        15%  { transform: rotate(-15deg); }
+        20%  { transform: rotate(15deg); }
+        25%  { transform: rotate(0); }
+        30%  { transform: rotate(-15deg); }
+        35%  { transform: rotate(15deg); }
+        40%  { transform: rotate(0); }
+        45%  { transform: rotate(-15deg); }
+        50%  { transform: rotate(15deg); }
+        55%  { transform: rotate(0); }
+
+        100% { transform: rotate(0); }
+    }
+
 
 
     /*#hero {*/
@@ -59,10 +78,12 @@ html{
 @theme{
     /*==============COLORS===============*/
     --color-prim: #DE972F;
-    --color-prim-hover: #e0a042;
+    --color-sec: #CEB08A;
+    --color-prim-hover: #dca451;
     --color-muted-48: #484848;
     --color-muted-29: #292929;
     --color-muted-40: #404040;
+    --color-muted-31: #313131;
 
     /*==============FONTS===============*/
     --font-700: iranSans-700;
