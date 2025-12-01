@@ -23,7 +23,7 @@ function Footer() {
     });
 
     // Move truck from left (-200px) to center (0px)
-    const truckX = useTransform(scrollYProgress, [0, 0.3], [-200, 0]);
+    const truckX = useTransform(scrollYProgress, [0, 0.3], [-200, 80]);
 
     return (
         <footer
